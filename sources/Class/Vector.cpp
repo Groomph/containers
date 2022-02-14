@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Span.cpp                                           :+:      :+:    :+:   */
+/*   Vector.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rsanchez <rsanchez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/16 17:18:07 by rsanchez          #+#    #+#             */
-/*   Updated: 2022/02/06 12:03:44 by rsanchez         ###   ########.fr       */
+/*   Updated: 2022/02/08 20:01:58 by rsanchez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,8 +40,6 @@ ostream	&Span::display(ostream &os) const
 
 void	resize()
 {
-	T	*array;
-
 	_capacity *= 2;
 	array = _array;
 	_array = new T[_capacity];
