@@ -6,7 +6,7 @@
 /*   By: rsanchez <rsanchez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/16 21:11:19 by rsanchez          #+#    #+#             */
-/*   Updated: 2022/02/14 19:41:23 by rsanchez         ###   ########.fr       */
+/*   Updated: 2022/02/14 20:00:20 by rsanchez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 # include <cstddef>
 
 // ************************************************************************** //
-//                               iterator Class                               //
+//                               Iterator Class                               //
 // ************************************************************************** //
 
 namespace	ft
@@ -34,7 +34,7 @@ struct iterator_traits
 };
 
 template <class Category, class T, class Distance = ptrdiff_t,
-	 			class Pointer = T*, class Reference = T &>
+	 			class Pointer = T *, class Reference = T &>
 struct Iterator
 {
 	typedef Category	iterator_category;

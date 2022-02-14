@@ -6,7 +6,7 @@
 /*   By: rsanchez <rsanchez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/16 21:11:19 by rsanchez          #+#    #+#             */
-/*   Updated: 2022/02/14 19:53:25 by rsanchez         ###   ########.fr       */
+/*   Updated: 2022/02/14 20:01:27 by rsanchez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 # include <iterator>
 
 // ************************************************************************** //
-//                         random_access_iterator Class                       //
+//                          Random_access_iterator Class                      //
 // ************************************************************************** //
 
 namespace	ft
@@ -38,13 +38,11 @@ class Random_access_iterator :
 	typedef typename Iterator::reference		reference;
 
 		explicit Random_access_iterator(T const &pt = NULL) :
-			Iterator(),
 			_p(pt)
 		{
 		}
 
 		Random_access_iterator(RaIt const &pt) :
-			Iterator(),
 			_p(pt._p)
 		{
 		}

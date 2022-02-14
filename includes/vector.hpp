@@ -6,7 +6,7 @@
 /*   By: rsanchez <rsanchez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/16 21:11:19 by rsanchez          #+#    #+#             */
-/*   Updated: 2022/02/14 19:54:26 by rsanchez         ###   ########.fr       */
+/*   Updated: 2022/02/14 21:07:59 by rsanchez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 #define __VECTOR_HPP__
 
 # include "Random_access_iterator.hpp"
+# include "Reverse_iterator.hpp"
 # include <iostream>
 
 using	std::ostream;
@@ -38,8 +39,8 @@ class vector
 
 		typedef ft::Random_access_iterator<T>	iterator;
 		typedef ft::Random_access_iterator<T const>	const_iterator;
-//		typedef reverse_iterator<iterator>	iterator;
-//		typedef reverse_iterator<const_iterator> const_reverse_iterator
+		typedef ft::Reverse_iterator<iterator>	reverse_iterator;
+		typedef ft::Reverse_iterator<const_iterator> const_reverse_iterator;
 		typedef	std::ptrdiff_t			difference_type;
 
 		typedef Alloc				allocator_type;
